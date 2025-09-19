@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能开发中 - boxfoonk个人主页</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 页面样式 --- */
+        :root {
+            --color-dark-bg: #0A0F1E;
+            --color-card-bg: #11182B;
+            --color-primary: #00A9FF;
+            --color-text: #E0E0E0;
+            --color-text-muted: #8892B0;
+            --color-border: rgba(0, 169, 255, 0.2);
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-dark-bg);
+            background-image: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
+            color: var(--color-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: var(--color-card-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .icon {
+            color: var(--color-primary);
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(0, 169, 255, 0.5);
+        }
+
+        p {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--color-primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 169, 255, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.829 12.001c0-1.78-1.05-3.32-2.58-4.05l-.83-3.23c-.1-.38-.44-.64-.84-.64s-.74.26-.84.64l-.83 3.23c-1.54.73-2.58 2.27-2.58 4.05s1.05 3.32 2.58 4.05l.83 3.23c.1.38.44.64.84.64s.74-.26.84-.64l.83-3.23c1.53-.73 2.58-2.27 2.58-4.05zm-1.89 0c0 .94-.48 1.76-1.22 2.22l-.46.28-.42 1.63-.42 1.63h-.01l-.42-1.63-.42-1.63-.46-.28a2.64 2.64 0 0 1-1.22-2.22c0-.94.48-1.76 1.22-2.22l.46-.28.42-1.63.42-1.63h.01l.42 1.63.42 1.63.46.28c.74.46 1.22 1.28 1.22 2.22zm-6.81-5.12c-.1-.38-.44-.64-.84-.64H9.45c-.4 0-.74.26-.84.64l-.83 3.23c-1.54.73-2.58 2.27-2.58 4.05s1.05 3.32 2.58 4.05l.83 3.23c.1.38.44.64.84.64h.83c.4 0 .74-.26.84-.64l.83-3.23c1.54-.73 2.58-2.27 2.58-4.05s-1.04-3.32-2.58-4.05l-.83-3.23zm-1.89 5.12c0 .94-.48 1.76-1.22 2.22l-.46.28-.42 1.63-.42 1.63H6.7l-.42-1.63-.42-1.63-.46-.28a2.64 2.64 0 0 1-1.22-2.22c0-.94.48-1.76 1.22-2.22l.46-.28.42-1.63.42-1.63h.01l.42 1.63.42 1.63.46.28c.74.46 1.22 1.28 1.22 2.22z"/>
+        </svg>
+
+        <h1>功能正在建设中</h1>
+        <p>我们正在全力开发全新的聊天功能，它即将上线，敬请期待！</p>
+        <a href="index.html" class="back-link">返回主页</a>
+    </div>
+
+</body>
+</html>

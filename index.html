@@ -29,6 +29,10 @@
 </head>
 
 <body id="body" data-spy="scroll" data-target=".header">
+<a href="#" id="lang-switcher" class="language-toggle">
+        <span></span>
+    </a>
+    <div id="particles-js"></div>
     <div id="particles-js"></div>
     <header class="header navbar-fixed-top">
         <nav class="navbar" role="navigation">
@@ -48,11 +52,11 @@
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">主页</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">介绍</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">资源分享</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">与我联系</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">关于</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body" data-translate="nav_home">主页</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about" data-translate="nav_about">介绍</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience" data-translate="nav_resources">资源分享</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work" data-translate="nav_contact_me">与我联系</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" data-translate="nav_about_footer">关于</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,8 +69,8 @@
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3 text-center">
                     <div class="promo-block-divider">
-                        <h1 class="promo-block-title">boxfoonk <br/> 个人主页</h1>
-                        <p class="promo-block-text">boxfoonk欢迎你的访问</p>
+                        <h1 class="promo-block-title" data-translate="hero_title">boxfoonk <br/> 个人主页</h1>
+                        <p class="promo-block-text" data-translate="hero_subtitle">boxfoonk欢迎你的访问</p>
                     </div>
                 </div>
             </div>
@@ -77,60 +81,60 @@
             <div class="row">
                 <div class="col-sm-3 sm-margin-b-30">
                     <div class="text-right sm-text-left">
-                        <h2 class="margin-b-0">介绍</h2>
-                        <p>introduce</p>
+                        <h2 class="margin-b-0" data-translate="about_heading">介绍</h2>
+                        <p data-translate="about_subheading">introduce</p>
                     </div>
                 </div>
                 <div class="col-sm-8 col-sm-offset-1">
                     <div class="margin-b-60">
-                        <p>早在2012年中boxfoonk接触到pc网络，并迸发出极大的爱好，迅速成为了个人爱好者</p>
-                        <p>在塞班（Java）（jar)系统中进行各项研究，并在android早期了解到软件开发、底层架构</p>
-                        <p>活跃于艾网、xda论坛、一加社区、米柚社区、机锋论坛。现对手机数码、Pc电脑、路由器、摄影、网络都有一定的理解研究</p>
+                        <p data-translate="about_p_1">早在2012年中boxfoonk接触到pc网络，并迸发出极大的爱好，迅速成为了个人爱好者</p>
+                        <p data-translate="about_p_2">在塞班（Java）（jar)系统中进行各项研究，并在android早期了解到软件开发、底层架构</p>
+                        <p data-translate="about_p_3">活跃于艾网、xda论坛、一加社区、米柚社区、机锋论坛。现对手机数码、Pc电脑、路由器、摄影、网络都有一定的理解研究</p>
                     </div>
-                    <h3 class="skill-matrix-title">技术栈与能力</h3>
+                    <h3 class="skill-matrix-title" data-translate="skills_title">技术栈与能力</h3>
                     <div class="skill-matrix">
                         <div class="skill-item">
                             <div class="skill-header">
                                 <i class="icon-screen-smartphone skill-icon"></i>
-                                <h4>Android 生态 (99%)</h4>
+                                <h4 data-translate="skill_android_title">Android 生态 (99%)</h4>
                             </div>
-                            <p class="skill-description">
+                            <p class="skill-description" data-translate="skill_android_desc">
                                 深入理解Android系统底层架构与App生态。擅长系统定制、性能优化、刷机与各类搞机实践。
                             </p>
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
                                 <i class="icon-screen-desktop skill-icon"></i>
-                                <h4>PC硬件与网络 (80%)</h4>
+                                <h4 data-translate="skill_pc_title">PC硬件与网络 (80%)</h4>
                             </div>
-                            <p class="skill-description">
+                            <p class="skill-description" data-translate="skill_pc_desc">
                                 精通PC硬件组装、性能诊断与故障排除。熟悉路由器配置、网络环境搭建与优化。
                             </p>
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
                                 <i class="icon-layers skill-icon"></i>
-                                <h4>Python (60%)</h4>
+                                <h4 data-translate="skill_python_title">Python (60%)</h4>
                             </div>
-                            <p class="skill-description">
+                            <p class="skill-description" data-translate="skill_python_desc">
                                 熟练使用Python进行自动化脚本编写、数据处理与爬虫开发，应用于日常工作流。
                             </p>
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
                                 <i class="icon-settings skill-icon"></i>
-                                <h4>C++ (50%)</h4>
+                                <h4 data-translate="skill_cpp_title">C++ (50%)</h4>
                             </div>
-                            <p class="skill-description">
+                            <p class="skill-description" data-translate="skill_cpp_desc">
                                 具备C++基础，了解内存管理和面向对象编程，能够进行简单的应用开发与算法实现。
                             </p>
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
                                 <i class="icon-cup skill-icon"></i>
-                                <h4>Java (30%)</h4>
+                                <h4 data-translate="skill_java_title">Java (30%)</h4>
                             </div>
-                            <p class="skill-description">
+                            <p class="skill-description" data-translate="skill_java_desc">
                                 了解Java语言基础及早期移动开发（J2ME），为Android开发提供了坚实的基础。
                             </p>
                         </div>
@@ -145,8 +149,8 @@
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">资源分享</h2>
-                            <p>Information sharing</p>
+                            <h2 class="margin-b-0" data-translate="resources_title">资源分享</h2>
+                            <p data-translate="resources_subtitle">Information sharing</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
@@ -155,8 +159,8 @@
                                 <div class="service" data-height="height">
                                     <div class="service-element"><i class="service-icon icon-chemistry"></i></div>
                                     <div class="service-info">
-                                        <h3>AI工具</h3>
-                                        <p class="margin-b-5">基于chatGTP4.0的人工智能助手</p>
+                                        <h3 data-translate="ai_tools_title">AI工具</h3>
+                                        <p class="margin-b-5" data-translate="ai_tools_desc">基于chatGTP4.0的人工智能助手</p>
                                     </div>
                                     <a href="chat.html" class="content-wrapper-link" target="_blank" rel="noopener noreferrer"></a>
                                 </div>
@@ -165,9 +169,9 @@
                                 <div class="service bg-color-base" data-height="height">
                                     <div class="service-element"><i class="service-icon color-white icon-screen-tablet"></i></div>
                                     <div class="service-info">
-                                        <h3 class="color-white">我的网盘</h3>
-                                        <p class="color-white margin-b-5">基于百度云提供的文件共享</p>
-                                        <p class="color-white margin-b-5">提取码:SWYT</p>
+                                        <h3 class="color-white" data-translate="nas_title">我的网盘</h3>
+                                        <p class="color-white margin-b-5" data-translate="nas_desc">基于百度云提供的文件共享</p>
+                                        <p class="color-white margin-b-5" data-translate="nas_code">提取码:SWYT</p>
                                     </div>
                                     <a href="https://pan.baidu.com/s/1QhuVYJTA2LOEeAskfkKvFw?pwd=swyt" class="content-wrapper-link" target="_blank" rel="noopener noreferrer"></a>
                                 </div>
@@ -176,8 +180,8 @@
                                 <div class="service" data-height="height">
                                     <div class="service-element"><i class="service-icon icon-badge"></i></div>
                                     <div class="service-info">
-                                        <h3>我的Github主页</h3>
-                                        <p class="margin-b-5">日常开发和收集一些有趣的项目</p>
+                                        <h3 data-translate="github_title">我的Github主页</h3>
+                                        <p class="margin-b-5" data-translate="github_desc">日常开发和收集一些有趣的项目</p>
                                     </div>
                                     <a href="https://github.com/boxfoonk" class="content-wrapper-link" target="_blank" rel="noopener noreferrer"></a>
                                 </div>
@@ -193,8 +197,8 @@
             <div class="row">
                 <div class="col-sm-3 sm-margin-b-30">
                     <div class="text-right sm-text-left">
-                        <h2 class="margin-b-0">与我联系</h2>
-                        <p>转跳至我的社交网站主页</p>
+                        <h2 class="margin-b-0" data-translate="contact_title">与我联系</h2>
+                        <p data-translate="contact_subtitle">转跳至我的社交网站主页</p>
                     </div>
                 </div>
                 <div class="col-sm-8 col-sm-offset-1">
@@ -225,16 +229,16 @@
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">关于</h2>
-                            <p>About me.</p>
+                            <h2 class="margin-b-0" data-translate="about_footer_title">关于</h2>
+                            <p data-translate="about_footer_subtitle">About me.</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
                         <div class="row">
-                            <div class="col-md-3 col-xs-6 md-margin-b-30"><h5>Location</h5><a href="#">Shenzhen, Guangdong</a></div>
-                            <div class="col-md-3 col-xs-6 md-margin-b-30"><h5>Phone</h5><a href="#">Unable to inform</a></div>
-                            <div class="col-md-3 col-xs-6"><h5>Email</h5><a href="mailto:liaixl52@gmail.com">liaixl52@gmail.com</a></div>
-                            <div class="col-md-3 col-xs-6"><h5>Web</h5><a href="https://boxfoonk.com">boxfoonk.com</a></div>
+                            <div class="col-md-3 col-xs-6 md-margin-b-30"><h5 data-translate="location_title">Location</h5><a href="#">Shenzhen, Guangdong</a></div>
+                            <div class="col-md-3 col-xs-6 md-margin-b-30"><h5 data-translate="phone_title">Phone</h5><a href="#" data-translate="phone_number">Unable to inform</a></div>
+                            <div class="col-md-3 col-xs-6"><h5 data-translate="email_title">Email</h5><a href="mailto:liaixl52@gmail.com">liaixl52@gmail.com</a></div>
+                            <div class="col-md-3 col-xs-6"><h5 data-translate="web_title">Web</h5><a href="https://boxfoonk.com">boxfoonk.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -243,31 +247,31 @@
     </div>
     <div class="hidden-popups">
         <div id="github-popup" class="work-popup-content">
-            <div class="margin-b-30"><h3 class="margin-b-5">Github</h3></div>
-            <p>GitHub是一个在线软件源代码托管服务平台...</p>
-            <p>PS:国内大部分地区可能无法正常访问Github，请使用网络工具访问最佳</p>
-            <a href="https://github.com/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link">进入我的主页</a>
+            <div class="margin-b-30"><h3 class="margin-b-5" data-translate="popup_github_title">Github</h3></div>
+            <p data-translate="popup_github_desc1">GitHub是一个在线软件源代码托管服务平台...</p>
+            <p data-translate="popup_github_desc2">PS:国内大部分地区可能无法正常访问Github，请使用网络工具访问最佳</p>
+            <a href="https://github.com/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link" data-translate="popup_github_link">进入我的主页</a>
         </div>
         <div id="coolapk-popup" class="work-popup-content">
-            <div class="margin-b-30"><h3 class="margin-b-5">酷安</h3><span>coolapk &amp; CoolMarket</span></div>
-            <p>酷安是以提供Android应用下载服务起家的网络社区...</p>
-            <a href="http://www.coolapk.com/u/643121" target="_blank" rel="noopener noreferrer" class="btn-link">进入我的酷安主页</a>
+            <div class="margin-b-30"><h3 class="margin-b-5" data-translate="popup_coolapk_title">酷安</h3><span data-translate="popup_coolapk_subtitle">coolapk &amp; CoolMarket</span></div>
+            <p data-translate="popup_coolapk_desc">酷安是以提供Android应用下载服务起家的网络社区...</p>
+            <a href="http://www.coolapk.com/u/643121" target="_blank" rel="noopener noreferrer" class="btn-link" data-translate="popup_coolapk_link">进入我的酷安主页</a>
         </div>
         <div id="qq-popup" class="work-popup-content">
-            <div class="margin-b-30"><h3 class="margin-b-5">QQ</h3><span>通过QQ来联系我</span></div>
-            <p>腾讯QQ是多平台即时通信软件...</p>
-            <p style="color:red;">请在QQ中搜索号码：1786916707 添加好友。</p>
-            <a href="tencent://message/?uin=1786916707" class="btn-link">点击跳转到QQ资料卡</a>
+            <div class="margin-b-30"><h3 class="margin-b-5">QQ</h3><span data-translate="popup_qq_subtitle">通过QQ来联系我</span></div>
+            <p data-translate="popup_qq_desc1">腾讯QQ是多平台即时通信软件...</p>
+            <p style="color:red;" data-translate="popup_qq_desc2">请在QQ中搜索号码：1786916707 添加好友。</p>
+            <a href="tencent://message/?uin=1786916707" class="btn-link" data-translate="popup_qq_link">点击跳转到QQ资料卡</a>
         </div>
         <div id="twitter-popup" class="work-popup-content">
-            <div class="margin-b-30"><h3 class="margin-b-5">推特</h3><span>Twitter &amp; X</span></div>
-            <p>Twitter（中文译推特），是源于美国的微博客及社交网络服务平台...</p>
-            <a href="https://x.com/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link">点击访问我的X主页</a>
+            <div class="margin-b-30"><h3 class="margin-b-5" data-translate="popup_twitter_title">推特</h3><span data-translate="popup_twitter_subtitle">Twitter &amp; X</span></div>
+            <p data-translate="popup_twitter_desc">Twitter（中文译推特），是源于美国的微博客及社交网络服务平台...</p>
+            <a href="https://x.com/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link" data-translate="popup_twitter_link">点击访问我的X主页</a>
         </div>
         <div id="telegram-popup" class="work-popup-content">
-            <div class="margin-b-30"><h3 class="margin-b-5">Telegram</h3><span>TG、电报、纸飞机</span></div>
-            <p>Telegram是跨平台的即时通信软件...</p>
-            <a href="https://t.me/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link">点击与我联系</a>
+            <div class="margin-b-30"><h3 class="margin-b-5">Telegram</h3><span data-translate="popup_telegram_subtitle">TG、电报、纸飞机</span></div>
+            <p data-translate="popup_telegram_desc">Telegram是跨平台的即时通信软件...</p>
+            <a href="https://t.me/boxfoonk" target="_blank" rel="noopener noreferrer" class="btn-link" data-translate="popup_telegram_link">点击与我联系</a>
         </div>
     </div>
 
@@ -278,7 +282,7 @@
                     <img class="footer-logo" src="assets/img/800x400/logo-dark.png" alt="boxfoonk Logo">
                 </div>
                 <div class="col-xs-6 text-right sm-text-left">
-                    <p class="margin-b-0">本站支持者: <a class="fweight-700" href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare</a></p>
+                    <p class="margin-b-0" data-translate="footer_supporter">本站支持者: <a class="fweight-700" href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare</a></p>
                 </div>
             </div>
         </div>
@@ -302,5 +306,7 @@
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/particles-init.js"></script>
+    
+    <script src="assets/js/translation.js"></script>
 </body>
 </html>

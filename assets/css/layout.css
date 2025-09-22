@@ -211,3 +211,70 @@ a:hover, a:focus { color: #fff; text-decoration: none; outline: none; }
     z-index: -1; /* 关键：将画布置于所有内容的下方 */
     background-color: #1c1c1c; /* 确保背景色与body一致 */
 }
+/* Language Toggle Switch */
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 2000; /* 确保在最顶层，不会被其他元素遮挡 */
+  width: 70px;
+  height: 34px;
+  background-color: #007bff; /* 默认蓝色背景 */
+  border-radius: 34px; /* 使其变为椭圆形 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+/* 切换按钮内部的白色圆形滑块 */
+.language-toggle span {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 椭圆轨道内的文字标签 (中 / EN) */
+.language-toggle::before,
+.language-toggle::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  user-select: none; /* 防止用户选中文字 */
+}
+
+.language-toggle::before {
+  content: '中';
+  left: 10px;
+}
+
+.language-toggle::after {
+  content: 'EN';
+  right: 10px;
+}
+
+/* 当语言为中文时的状态 (滑块在左侧) */
+.language-toggle.lang-zh span {
+  transform: translateX(0);
+}
+.language-toggle.lang-zh {
+  background-color: #007bff; /* 蓝色 */
+}
+
+/* 当语言为英文时的状态 (滑块移动到右侧) */
+.language-toggle.lang-en span {
+  transform: translateX(32px);
+}
+.language-toggle.lang-en {
+  background-color: #28a745; /* 绿色 */
+}
